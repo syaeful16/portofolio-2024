@@ -1,0 +1,238 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.desc {
+  position: relative;
+  color: #787878;
+}
+
+.desc::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 10px;
+  color: #F3F1EC;
+  z-index: 20;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+
+/* Teams.jsx */
+.teams-photo:not(:first-child) {
+  margin-left: -1rem;
+}
+
+@media (min-width: 768px) {
+  .teams-photo:not(:first-child) {
+    margin-left: -.9rem;
+  }
+}
+
+/* List Expand */
+.listing:last-child {
+  border-bottom-width: 1px;
+} 
+
+/* Creating.jsx */
+.words span{
+  height: 100%;
+  animation: loops 8s infinite;
+}
+
+/* Design.jsx */
+.gallery {
+  transform-style: preserve-3d;
+  perspective: 1800px;
+}
+
+@media (min-width: 768px) {
+  .block-img {
+    position: absolute;
+    width: 220px;
+    height: 160px;
+    background: #c0c0c0;
+    transform-style: preserve-3d;
+    transform: translateZ(1800px);
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-img {
+    position: absolute;
+    width: 90px;
+    height: 70px;
+    background: #c0c0c0;
+    transform-style: preserve-3d;
+    transform: translateZ(1800px);
+    border-radius: 6px;
+  }
+}
+
+.block-1 {
+  top: 30%;
+  left: 55%;
+  background: url('../src/assets/images/design-feed/design-1.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-2 {
+  top: 20%;
+  left: 25%;
+  background: url('../src/assets/images/design-feed/design-2.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-3 {
+  top: 50%;
+  left: 10%;
+  background: url('../src/assets/images/design-feed/design-3.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-4 {
+  top: 60%;
+  left: 40%;
+  background: url('../src/assets/images/design-feed/design-4.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-5 {
+  top: 30%;
+  left: 30%;
+  background: url('../src/assets/images/design-feed/design-5.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-6 {
+  top: 60%;
+  left: 60%;
+  background: url('../src/assets/images/design-feed/design-6.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-7 {
+  top: 20%;
+  left: 50%;
+  background: url('../src/assets/images/design-feed/design-7.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-8 {
+  top: 60%;
+  left: 10%;
+  background: url('../src/assets/images/design-feed/design-8.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-9 {
+  top: 20%;
+  left: 40%;
+  background: url('../src/assets/images/design-feed/design-9.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-10 {
+  top: 40%;
+  left: 60%;
+  background: url('../src/assets/images/design-feed/design-10.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-11 {
+  top: 60%;
+  left: 25%;
+  background: url('../src/assets/images/design-feed/design-11.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-12 {
+  top: 50%;
+  left: 60%;
+  background: url('../src/assets/images/design-feed/design-12.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-13 {
+  top: 60%;
+  left: 25%;
+  background: url('../src/assets/images/design-feed/design-13.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-14 {
+  top: 25%;
+  left: 25%;
+  background: url('../src/assets/images/design-feed/design-14.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-15 {
+  top: 50%;
+  left: 10%;
+  background: url('../src/assets/images/design-feed/design-15.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-16 {
+  top: 60%;
+  left: 40%;
+  background: url('../src/assets/images/design-feed/design-16.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-17 {
+  top: 30%;
+  left: 30%;
+  background: url('../src/assets/images/design-feed/design-17.webp') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-18 {
+  top: 60%;
+  left: 60%;
+  background: url('../src/assets/images/design-feed/design-18.png') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-19 {
+  top: 20%;
+  left: 40%;
+  background: url('../src/assets/images/design-feed/design-19.jpeg') no-repeat 50% 50%;
+  background-size: contain;
+}
+.block-20 {
+  top: 75%;
+  left: 45%;
+}
+
+@keyframes loops {
+  16% {
+    transform: translateY(-100%);
+  }
+  32% {
+    transform: translateY(-100%);
+  }
+  48% {
+    transform: translateY(-200%);
+  }
+  64% {
+    transform: translateY(-200%);
+  }
+  80% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(-300%);
+  }
+}
+
+
+/* Font Local */
+@font-face {
+  font-family: "modern_era_light";
+  src: url("../src/assets/fonts/modern-era-light.ttf");
+}
+
+@font-face {
+  font-family: "modern_era_regular";
+  src: url("../src/assets/fonts/modern-era-regular.ttf");
+}
+
+@font-face {
+  font-family: "modern_era_medium";
+  src: url("../src/assets/fonts/modern-era-medium.ttf");
+}
